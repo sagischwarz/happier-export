@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+
+# uv
+uv.lock
+
+# Exported data (contains personal meditation history)
+meditation_history*.json
+meditation_history*.csv
+history_debug.html
+history_response_debug.json
+
+# Saved session cookies
+.happier_session_cookies
+
+# APK files and decompiled output
+*.apk
+*.apkm
+extracted/
+decompiled/
+
+# OS
+.DS_Store
+Thumbs.db

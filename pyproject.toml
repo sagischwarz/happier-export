@@ -1,0 +1,21 @@
+[project]
+name = "happier-export"
+version = "0.1.0"
+description = "Export your Ten Percent Happier meditation history to JSON/CSV"
+readme = "README.md"
+authors = [
+    { name = "Sagi Schwarz", email = "mail@sagischwarz.de" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+]
+
+[project.scripts]
+happier-export = "happier_export.export_history:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
